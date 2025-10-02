@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-900">
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} isScrolled={isScrolled} />
-      <Hero heroSlides={heroSlides} currentSlide={currentSlide} stats={stats} />
+      <Hero stats={stats} />
       <Brands brands={brands} />
       <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
       {activeTab === "showroom" && <Showroom cars={cars} />}
